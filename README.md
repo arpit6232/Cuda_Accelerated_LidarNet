@@ -23,6 +23,8 @@ This is not an official nuTonomy codebase, but it can be used to match the publi
 ![Example Results](https://raw.githubusercontent.com/nutonomy/second.pytorch/master/images/pointpillars_kitti_results.png)
 
 
+## Deep Learning Implementation for Getting Bounding Boxes from Lidar Point Clouds 
+![Example Results](images/PointPillers_Deep_Learning_Network.png)
 
 ## The overall workflow is as follow:
 ```
@@ -51,14 +53,16 @@ This is not an official nuTonomy codebase, but it can be used to match the publi
 4:  Create (optional: additional) layers for analysis
                                     ||
                                     \/
-5:  Build the tensorRT Inference Engine (Quantization, Decoding, AMT-FP16 conversion etc), [TinyML Implementation details](https://github.com/AESD-Course-Project/AESD-Course-Project.github.io/wiki/TinyML) 
+5:  Build the tensorRT Inference Engine (Quantization, Decoding, AMT-FP16 conversion etc), 
+```
+![TinyML Implementation details](https://github.com/AESD-Course-Project/AESD-Course-Project.github.io/wiki/TinyML) 
+```
                                     ||
                                     \/
 6:  Retrieving the engine from inference Engine 
                                     ||
                                     \/
 7:  Deploy Model 
-
 ```
 
 ## The Repository Overview 
