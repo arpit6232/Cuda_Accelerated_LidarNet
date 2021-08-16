@@ -36,6 +36,31 @@ This is not an official nuTonomy codebase, but it can be used to match the publi
                                     \/
 3:  Detecting objects of original pointcloud (x,y,z,intensity) on vehicle device.
 ```
+
+## A general workflow for any TensorRT Conversion :
+```
+1:  Training and evaluating on your GPU device with Pytorch to get the suitable weights
+                                    ||
+                                    \/
+2:  Conversion of Weights to a model checkpoint { pfn.trt and bankbone.trt }
+                                    ||
+                                    \/
+3:  Create TensorRT Network 
+                                    ||
+                                    \/
+4:  Create (optional: additional) layers for analysis
+                                    ||
+                                    \/
+5:  Build the tensorRT Inference Engine (Quantization, Decoding, AMT-FP16 conversion etc), [TinyML Implementation details](https://github.com/AESD-Course-Project/AESD-Course-Project.github.io/wiki/TinyML) 
+                                    ||
+                                    \/
+6:  Retrieving the engine from inference Engine 
+                                    ||
+                                    \/
+7:  Deploy Model 
+
+```
+
 ## The Repository Overview 
 ```
 ├── core
