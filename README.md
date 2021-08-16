@@ -24,7 +24,11 @@ This is not an official nuTonomy codebase, but it can be used to match the publi
 
 
 ## Deep Learning Implementation for Getting Bounding Boxes from Lidar Point Clouds 
-![Example Results](images/PointPillers_Deep_Learning_Network.png)
+![Deep Learning End to End Pipeline](images/PointPillers_Deep_Learning_Network.png)
+
+![Deep Learning Network](images/BackBone2DConvNet.png)
+
+
 
 ## The overall workflow is as follow:
 ```
